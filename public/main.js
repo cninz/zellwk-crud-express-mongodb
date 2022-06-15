@@ -8,11 +8,11 @@ update.addEventListener('click', _ => {
             name: 'Darth Vader', 
             quote: 'I find your lack of faith disturbing'
         })
-        .then(res => {
-            if (res.ok) return res.json()
-        })
-        .catch(res => {
-            console.log(response)
-        })
+    })
+    .then(res => {
+        if (res.ok) return res.json()
+    })
+    .catch(response => {
+        console.log(response)
     })
 })
